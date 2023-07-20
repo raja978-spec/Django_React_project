@@ -147,4 +147,11 @@ create the file called babel
   "babel-loader": "^9.1.3",
   "babel-plugin-transform-class-properties": "^6.24.1",
    
+After creating the file we have to type the following
+json data
+
+{
+"presets":["@babel/preset-env","@babel/preset-react"],
+"plugins":["transform-class-properties"]
+}
 '''
