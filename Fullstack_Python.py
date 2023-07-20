@@ -134,3 +134,17 @@ denied access.
    access if the user is authenticated and their 
    access token contains the required scope.
 '''
+
+#   BABEL FILE
+'''
+
+To work with the following dependency we have to
+create the file called babel 
+ 
+ "@babel/core": "^7.22.9",
+  "@babel/preset-env": "^7.22.9",
+  "@babel/preset-react": "^7.22.5",
+  "babel-loader": "^9.1.3",
+  "babel-plugin-transform-class-properties": "^6.24.1",
+   
+'''
