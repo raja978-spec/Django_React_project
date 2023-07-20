@@ -1,0 +1,11 @@
+node_modules
+
+*.log
+*.pit
+*.pyc
+
+__pycache__/
+local_settings.py 
+
+*$py.class
+*.so

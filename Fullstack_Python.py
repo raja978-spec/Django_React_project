@@ -45,9 +45,19 @@ from rest_framework import serializers
 
 this is the module used to inherit serialized 
 model
-   
-Create an file called serilaizer.py inside app
 
+MODEL.py:
+
+from django.db import models
+
+# Create your models here.
+class Lead(models.Model):
+    name=models.CharField(max_length=100)
+    email=models.EmailField(max_length=100,unique=True)
+    message=models.CharField(max_length=500,blank=True)
+    created_at=models.DateTimeField(auto_now_add=True)
+    
+Create an file called serilaizer.py inside app
 
 SERILAIZER.py:
 
@@ -60,6 +70,25 @@ class LeadSerializer(serializers.ModelSerializer):
         fields="__all__"
 
 '''
+
+#    CREATING DJANGO WEBSITE FRONT END WITH REACT
+# REFER HERE G:\VS_CODE\Django_React_project\leadmanager
+'''
+
+* Create an app with python manage.py command, inside
+  that we have to create scr/components, template/frontend
+  static/frontend
+
+* React based operations are goes to scr/components
+  folder template/frontend are handles the entry 
+  point of our app, that is index.js
+
+* And static/frontend has the complied version of
+  js files that will generated when npm run build
+  command are in run.
+
+'''
+
 
 #         CREATING VIEWSET
 '''
