@@ -154,4 +154,26 @@ json data
 "presets":["@babel/preset-env","@babel/preset-react"],
 "plugins":["transform-class-properties"]
 }
+
+After this we have to load babel loader fot that
+we have to create another file called
+webpack.config.js both of this two folders should
+be inside the project directroy.
+
+
+WEBPACK.CONFIG.js:
+
+module.exports={
+    module:{
+        rules:[
+            {
+                test:/\.js$/, // looks all js files
+                exclude:/node_modules/, // excludes node module
+                use:{
+                    loader:"babel-loder"  // loads babel loader
+                }
+            }
+        ]
+    }
+}
 '''
