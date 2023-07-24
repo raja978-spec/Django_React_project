@@ -194,4 +194,6 @@ module.exports={
 
   },
 
+# CREATING AND CONFIGURE MENTIONED index.js file 
+  INSIDE FRONTEND/SCR     
 '''
