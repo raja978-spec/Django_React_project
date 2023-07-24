@@ -139,7 +139,7 @@ denied access.
 '''
 
 To work with the following dependency we have to
-create the file called babel 
+create the file called .babelrc 
  
  "@babel/core": "^7.22.9",
   "@babel/preset-env": "^7.22.9",
@@ -171,9 +171,27 @@ module.exports={
                 exclude:/node_modules/, // excludes node module
                 use:{
                     loader:"babel-loder"  // loads babel loader
-                }
+                }                         // to transfer js file code
             }
         ]
     }
 }
+'''
+
+#    CONFIG PACKAGE.JSON TO RUN REACT
+'''
+* Replace test with dev in the package.json file.
+* It looks for entry point for the react app
+  that is index.js
+* And all the output compiled version of js files
+  are gonna be stored in static/frontend folder.
+* dev are used to run react app on local and build is
+  used to run on delpoyment
+
+  "scripts": {
+    "dev":"webpack --mode development ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
+  "build":"webpack --mode development ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js"
+
+  },
+
 '''
