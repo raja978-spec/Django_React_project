@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
-    "dev":"webpack --mode development ./leadmanager/frontend/src/index.js --output-path ./leadmanager/frontend/static/frontend/main.js",
-    "build":"webpack --mode production ./leadmanager/frontend/src/index.js --output-path ./leadmanager/frontend/static/frontend/main.js"
-
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
-  "repository": {
+
+   "repository": {
     "type": "git",
     "url": "git+https://github.com/raja978-spec/Django_React_project.git"
   },
@@ -26,7 +25,6 @@
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "D": "^1.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
